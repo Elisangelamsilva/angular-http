@@ -1,0 +1,4 @@
+Método responsável pelas requisições http, nesse caso utilizando json-server usando
+HttpClient, antes tem que criar um arquivo service, no angular é recomendadp criar 
+services para os métodos que fas chamadas http. 
+ng g service service/car 
