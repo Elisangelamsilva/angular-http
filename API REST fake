@@ -1,0 +1,4 @@
+Para simular o uso do HttpClient, precisamos de uma API REST, 
+para isso podemos usar o json-server: https://github.com/typicode/json-server
+Para instalar o json-server, bastar executar o seguinte comando:
+sudo npm install -g json-server
