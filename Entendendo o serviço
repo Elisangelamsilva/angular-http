@@ -17,3 +17,14 @@ getCarById(): recupera um carro especifico pelo id.
 saveCar(): salva um carro.
 updateCar(): atualiza um carro.
 deleteCar(): exclui um carro especifico pelo id.
+
+Usando o serviço 
+
+O método getCars()  será responsável por chamar a listagem de carros disponíveis através do nosso serviço CarService, 
+incluímos no onOnit() para quando acessarmos app.component.ts ele nos trazer todos os carros, observe que logo após o método getCars() do carService, usamos o subscribe
+
+O subscribe é um dos operadores mais importantes do Observable da biblioteca RxJS, ele notificará assim que a resposta vier e 
+for transformada em Json, nos retornando um array de Carros.
+
+Não é esperado retorno nas chamadas aos método saveCar(), updateCar() e deleteCar(), sendo assim, quando entrar no subscribe estamos limpando nosso formulário e 
+consultando novamente o método getCars para listar todos os carros.
