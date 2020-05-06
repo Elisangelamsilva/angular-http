@@ -1,0 +1,19 @@
+Injetamos o HttpClient e atribuímos a uma variável chamada httpClient, e utilizaremos os métodos get, post, put e delete.
+A variável chamada "url" contera o endereço disponibilizada pela API REST fake
+json-serve.  
+Adicionamos em nosso HttpClient um objeto do tipo HttpOptions, que é utilizado para que um cliente possa descobrir quais
+as opções de requisição permitidas para um determinado recurso em um servidor. 
+
+Quando acontecer erros irá produzir um objeto javascript ErrorEvent, para manipular 
+criamos um método dentro do nosso serviço chamado handleError, esse método um 
+RxJS ErrorObservable.
+O angular recomenda que métodos de manipulação de erros deve ser nos services e não nos componentes.
+
+Antes de chamar o método handleError, o operador chamado retry é o mais simples da 
+biblioteca RxJS, ele reexecutará a chamada em um numero específico de vezes caso aconteça um erro.
+
+getCars(): recupera todos os carros.
+getCarById(): recupera um carro especifico pelo id.
+saveCar(): salva um carro.
+updateCar(): atualiza um carro.
+deleteCar(): exclui um carro especifico pelo id.
