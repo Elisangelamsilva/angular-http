@@ -1,4 +1,0 @@
-Para usar o HttpClient, precisamos adicionar o modulo
-HttpClientModule no arquivo app.module.ts. Dentro de imports do 
-decorator @NgModule, adicione o modulo HttpClientModule. Dentro da área imports, adc 
-import { HttpClientModule } from '@angular/common/http'
